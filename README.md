@@ -1,27 +1,54 @@
-Project Title
+# Energy Efficiency in 5G Networks Using Gaussian Mixture Models
 
-Energy Efficiency in 5G Networks Using Gaussian Mixture Models
+## Overview
+This project applies Gaussian Mixture Models (GMM) to cluster synthetic 5G traffic patterns and simulate dynamic energy optimization.
 
-Objective
+The model automatically determines the optimal number of traffic clusters using Bayesian Information Criterion (BIC).
 
-To cluster 5G traffic patterns using Gaussian Mixture Models and simulate energy consumption optimization.
+---
 
-Methodology
+## Problem Statement
+5G networks experience fluctuating traffic demand. Static energy allocation leads to inefficiency and power wastage.  
+This project models traffic distributions probabilistically and estimates adaptive energy allocation strategies.
 
-Synthetic dataset generation
+---
 
-Feature scaling
+## Methodology
+1. Synthetic traffic data generation (Low, Medium, High density)
+2. Data scaling using StandardScaler
+3. Model selection using BIC
+4. Gaussian Mixture clustering
+5. Energy estimation based on cluster intensity
 
-GMM clustering
+---
 
-Energy estimation per cluster
+## Model Selection Formula
 
-Results
+GMM models the probability distribution as:
 
-Successfully identified 3 traffic clusters
+p(x) = Σ π_k N(x | μ_k, Σ_k)
 
-Estimated energy consumption based on traffic density
+BIC is used to balance model fit and complexity.
 
-Technologies
+---
 
-Python, NumPy, Matplotlib, Scikit-learn
+## Results
+- Optimal number of clusters: 3
+- Clear separation of traffic density groups
+- Estimated dynamic energy consumption calculated
+
+---
+
+## Technologies Used
+- Python
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+---
+
+## Conference Presentation
+Presented at IEEE International Conference on Communication, Computing and Signal Processing (IICCCS) 2024.
+## Visualization
+
+![Clustering Output](gmm_output.png)
