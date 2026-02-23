@@ -1,0 +1,11 @@
+How did you determine number of clusters?
+
+You answer:
+
+“I used Bayesian Information Criterion (BIC) to evaluate model complexity and fit.”
+
+How does clustering improve energy efficiency?
+
+You answer:
+
+“We identify traffic density clusters and allocate energy resources dynamically based on cluster intensity, reducing unnecessary power usage during low-demand periods.”
